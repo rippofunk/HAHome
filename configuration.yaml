@@ -14,6 +14,6 @@ sensor:
   - platform: rest
     name: postvalues
     resource_template: >-
-        http://ha.rippofunk.com/record.php?sensor_value={{states('sensor.powermeter_voltage') }}&sensor_name=voltage
+        http://server.com/record.php?sensor_value={{states('sensor.powermeter_voltage') }}&sensor_name=voltage
     value_template: '1'  
     scan_interval: 60 
